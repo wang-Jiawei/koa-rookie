@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style lang='scss'>
+<style>
 .container {
   min-height: 100vh;
   display: flex;
