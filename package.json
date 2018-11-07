@@ -10,6 +10,11 @@
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
+  "config": {
+    "nuxt": {
+      "port": 65500
+    }
+  },
   "dependencies": {
     "cross-env": "^5.2.0",
     "nuxt": "^2.0.0",
