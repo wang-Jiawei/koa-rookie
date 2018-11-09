@@ -19,7 +19,7 @@ export default {
       canSuccess: true,
       throttle: 200,
       duration: 5000,
-      height: '2px',
+      height: '4px',
       color: '#fff',
       failedColor: 'red',
     }

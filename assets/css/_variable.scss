@@ -1,0 +1,40 @@
+
+$font-co-1: #303133;
+
+$font-co-2: #606266;
+
+$font-co-3: #909399;
+
+$font-co-4: #C0C4CC;
+
+$bd-co-1: #DCDFE6;
+
+$bd-co-2: #E4E7ED;
+
+$bd-co-3: #EBEEF5;
+
+$bd-co-4: #F2F6FC;
+
+$main-co: #ededef;
+
+$link-co: #7594B3;
+
+$themes: (
+  theme1: (
+    header-co: #24292c,
+    border-co: #24292c,
+    font-co-head: #C0C4CC,
+    font-co-head-hover: #fff,
+    head-search-bg: #000,
+  ),
+  theme2: (
+    header-co: #fff,
+    border-co: #DCDFE6,
+    font-co-head: #606266,
+    font-co-head-hover: #000,
+  ),
+);
+
+
+
+

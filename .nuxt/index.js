@@ -12,6 +12,7 @@ import { setContext, getLocation, getRouteData } from './utils'
 
 /* Plugins */
 import nuxt_plugin_axios_219f10ac from 'nuxt_plugin_axios_219f10ac' // Source: ./axios.js
+import nuxt_plugin_iconfont_584097b0 from 'nuxt_plugin_iconfont_584097b0' // Source: ..\\static\\font\\iconfont.js (ssr: false)
 
 
 // Component: <no-ssr>
@@ -135,6 +136,9 @@ async function createApp (ssrContext) {
   
   if (typeof nuxt_plugin_axios_219f10ac === 'function') await nuxt_plugin_axios_219f10ac(app.context, inject)
   
+  if (process.client) { 
+    if (typeof nuxt_plugin_iconfont_584097b0 === 'function') await nuxt_plugin_iconfont_584097b0(app.context, inject)
+  }
 
   // If server-side, wait for async component to be resolved first
   if (process.server && ssrContext && ssrContext.url) {

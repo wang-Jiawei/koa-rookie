@@ -14,26 +14,29 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ]
   },
 
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: {
+    color: '#fff',
+    height: '4px'
+  },
 
   /*
   ** Global CSS
   */
   css: [
-    '@/assets/css/main.scss'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: "~static/font/iconfont.js", ssr: false }
   ],
 
   /*
