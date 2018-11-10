@@ -7,7 +7,8 @@
 
 <script>
   import Header from '~/components/Header.vue'
-  export default  {
+
+  export default {
     components: {
       Header
     },
@@ -21,18 +22,22 @@
         return `theme-${this.theme}`;
       }
     },
-    mounted () {
-        this.theme = Math.random() > 0.5 ? 'theme1' : 'theme2';
-        this.$nextTick(() => {
+    created() {
+      this.theme = Math.random() > 0.5 ? 'theme1' : 'theme2';
+      this.$nextTick(() => {
         this.$nuxt.$loading.start();
-        setTimeout(() => this.$nuxt.$loading.finish(), 500)
+        setTimeout(() => this.$nuxt.$loading.finish(), 200)
       })
+    },
+    mounted() {
+
     }
   }
 </script>
 <style lang="scss">
   @import "~normalize.css";
   @import "~assets/css/main.scss";
+
   html {
     font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;

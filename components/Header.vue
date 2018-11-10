@@ -3,10 +3,10 @@
     <div class="g-container">
       <img src="https://picsum.photos/220/40/?image=11" class="u-logo" alt="">
       <nav class="m-nav">
-        <nuxt-link to="/">首页</nuxt-link>
-        <nuxt-link to="/about">浏览</nuxt-link>
-        <nuxt-link to="/about">话题</nuxt-link>
-        <nuxt-link to="/about">关于</nuxt-link>
+        <nuxt-link to="/" exact>首页</nuxt-link>
+        <nuxt-link to="/article" exact>文章</nuxt-link>
+        <nuxt-link to="/about" exact>话题</nuxt-link>
+        <nuxt-link to="/about" exact>关于</nuxt-link>
       </nav>
       <div class="m-search">
         <svg class="icon" aria-hidden="true">
@@ -48,6 +48,8 @@
     height: 80px;
     padding: 19px 0 20px;
     margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
     @include themify($themes) {
       background: themed('header-co');
       border-bottom: 1px solid themed('border-co');

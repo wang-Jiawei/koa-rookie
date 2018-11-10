@@ -1,8 +1,19 @@
 @import "variable";
 @import "mixin";
 
+// 过度动效
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s;
+}
+.page-enter, .page-leave-active {
+  opacity: 0;
+}
+
 a {
   text-decoration: none;
+}
+a:hover {
+  color: #3b8070 !important;
 }
 
 .g-container {
@@ -10,6 +21,13 @@ a {
   margin: 0 auto;
   width: 960px;
 }
+
+.text-hidn {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .icon {
   /* 通过设置 font-size 来改变图标大小 */
   width: 1em; height: 1em;

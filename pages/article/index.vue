@@ -1,29 +1,27 @@
 <template>
-    <section class="g-container">
-      <div class="g-mn">
+  <section class="g-container">
+    <div class="g-mn">
+      <no-ssr placeholder="Loading...">
         <index-list/>
         <index-list/>
-        <index-list/>
-        <index-list/>
-        <index-list/>
-      </div>
-      <right-side></right-side>
-    </section>
+      </no-ssr>
+    </div>
+    <div class="g-rside"></div>
+  </section>
 
 </template>
 
 <script>
   import Header from '~/components/Header.vue'
   import indexList from '~/components/index-list.vue'
-  import rightSide from '~/components/right-side.vue'
 
   export default {
     components: {
       Header,
-      indexList,
-      rightSide
+      indexList
     },
     created() {
+
     },
     mounted() {
 

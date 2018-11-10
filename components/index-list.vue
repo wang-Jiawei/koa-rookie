@@ -9,7 +9,7 @@
     </header>
     <div class="m-body">
       <p>比如薯片这些是内容部分部分部分</p>
-      <img src="https://picsum.photos/618/618/?image=22" alt="">
+      <img src="https://picsum.photos/618/310/?image=22" alt="">
     </div>
     <div class="options">
       <svg class="icon" aria-hidden="true">
@@ -53,7 +53,7 @@
     width: 620px;
     border: 1px solid $bd-co-1;
     background: #fff;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
     margin-bottom: 40px;
     .m-meta {
       display: flex;
@@ -90,7 +90,7 @@
       img {
         display: inline-block;
         width: 618px;
-        height: 618px;
+        height: 310px;
       }
     }
     .options {

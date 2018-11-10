@@ -20,7 +20,7 @@ export default {
       throttle: 200,
       duration: 5000,
       height: '4px',
-      color: '#fff',
+      color: '#3b8070',
       failedColor: 'red',
     }
   },
